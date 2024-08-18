@@ -1,0 +1,5 @@
+{
+	"name": "simple_triangle",
+	"avatar": "simple_triangle.png",
+	"entry_point": "simple_triangle.lua"
+}
