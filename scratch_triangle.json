@@ -1,3 +1,4 @@
 {
+	"name": "scratch_triangle",
 	"entry_point": "scratch_triangle.lua"
 }
