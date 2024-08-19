@@ -1,18 +1,18 @@
 [
-    {
+	{
 		"type": "app",
-        "app_type": "github",
-        "user": "okhmanyuk-ev",
-        "repository": "sky-app-examples",
-        "branch": "main",
+	        "app_type": "github",
+	        "user": "okhmanyuk-ev",
+	        "repository": "sky-app-examples",
+	        "branch": "main",
 		"filename": "console.json"
 	},
-    {
-        "type": "app",
-        "app_type": "github",
-        "user": "okhmanyuk-ev",
-        "repository": "sky-app-examples",
-        "branch": "main",
-        "filename": "simple_triangle.json"
-    }
+	{
+		"type": "app",
+		"app_type": "github",
+		"user": "okhmanyuk-ev",
+		"repository": "sky-app-examples",
+		"branch": "main",
+		"filename": "simple_triangle.json"
+	}
 ]
