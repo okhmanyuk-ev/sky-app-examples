@@ -1,5 +1,4 @@
 {
-    "name": "test: scene_rect",
-    "avatar": "scene_rect.png",
+    "name": "scene rect",
     "entry_point": "scene_rect.lua"
 }
