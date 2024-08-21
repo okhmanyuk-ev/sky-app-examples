@@ -1,0 +1,5 @@
+local rect = Scene.CreateRectangle()
+Scene.SetSize(rect, 100, 100)
+Scene.SetAnchor(rect, 0.5, 0.5)
+Scene.SetPivot(rect, 0.5, 0.5)
+Scene.Attach(Scene.GetRoot(), rect)
