@@ -1,4 +1,5 @@
 {
     "name": "scene rect",
+    "avatar": "scene_rect.png",
     "entry_point": "scene_rect.lua"
 }
