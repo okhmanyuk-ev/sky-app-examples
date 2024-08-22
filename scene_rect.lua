@@ -1,7 +1,7 @@
 local bg = Scene.Rectangle.Create()
 bg.Stretch = Vec2(1, 1)
-bg.TopColor = Vec4(0, 0.125, 0.125, 1)
-bg.BottomColor = Vec4(0, 0.25, 0.25, 1)
+bg.TopColor = Vec4(0.25, 0.0, 0.0, 1)
+bg.BottomColor = Vec4(0.125, 0.0, 0.0, 1)
 Scene.GetRoot():Attach(bg)
 
 local simple = Scene.Rectangle.Create()
