@@ -1,0 +1,4 @@
+{
+    "name": "test: sprites",
+    "entry_point": "sprites.lua"
+}
