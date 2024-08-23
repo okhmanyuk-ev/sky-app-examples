@@ -22,5 +22,13 @@
 		"repository": "sky-app-examples",
 		"branch": "main",
 		"filename": "rectangles.json"
+	},
+	{
+		"type": "app",
+		"app_type": "github",
+		"user": "okhmanyuk-ev",
+		"repository": "sky-app-examples",
+		"branch": "main",
+		"filename": "sprites.json"
 	}
 ]
