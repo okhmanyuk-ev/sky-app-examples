@@ -1,1 +1,1 @@
-https://okhmanyuk-ev.github.io/sky-app/
+https://github.com/okhmanyuk-ev/sky-app
