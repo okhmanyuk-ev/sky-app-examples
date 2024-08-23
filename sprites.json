@@ -1,4 +1,5 @@
 {
-    "name": "test: sprites",
+    "name": "sprites",
+    "avatar": "tada.png",
     "entry_point": "sprites.lua"
 }
