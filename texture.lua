@@ -5,7 +5,6 @@ local vertices = {
 	Vertex():WithPos(Vec3(-0.5, 0.5, 0)):WithTexCoord(Vec2(0, 0))
 }
 local indices = { 0, 1, 2, 2, 1, 3 }
-
 local texture = nil
 
 FetchTexture("tada.png", function(_texture)
