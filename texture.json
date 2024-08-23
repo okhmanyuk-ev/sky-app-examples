@@ -1,4 +1,4 @@
 {
-    "name": "test_texture",
+    "name": "texture",
     "entry_point": "texture.lua"
 }
