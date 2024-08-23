@@ -21,6 +21,14 @@
 		"user": "okhmanyuk-ev",
 		"repository": "sky-app-examples",
 		"branch": "main",
+		"filename": "texture.json"
+	},
+	{
+		"type": "app",
+		"app_type": "github",
+		"user": "okhmanyuk-ev",
+		"repository": "sky-app-examples",
+		"branch": "main",
 		"filename": "rectangles.json"
 	},
 	{
