@@ -1,0 +1,4 @@
+{
+    "name": "labels",
+    "entry_point": "labels.lua"
+}
