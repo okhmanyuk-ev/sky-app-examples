@@ -38,5 +38,13 @@
 		"repository": "sky-app-examples",
 		"branch": "main",
 		"filename": "sprites.json"
+	},
+	{
+		"type": "app",
+		"app_type": "github",
+		"user": "okhmanyuk-ev",
+		"repository": "sky-app-examples",
+		"branch": "main",
+		"filename": "labels.json"
 	}
 ]
