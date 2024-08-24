@@ -4,6 +4,16 @@ centered.Pivot = Vec2(0.5, 0.5)
 centered.Text = "This is centered label"
 Scene.GetRoot():Attach(centered)
 
+local outlined = Scene.Label.Create()
+outlined.Anchor = Vec2(0.5, 0.75)
+outlined.Pivot = Vec2(0.5, 0.5)
+outlined.Color = Vec4(0, 0, 0, 0)
+outlined.OutlineColor = Vec4(1, 0, 1, 1)
+outlined.OutlineThickness = 0.5
+outlined.FontSize = 72
+outlined.Text = "This is outlined label"
+Scene.GetRoot():Attach(outlined)
+
 local top_left = Scene.Label.Create()
 top_left.Text = "This is top left label"
 Scene.GetRoot():Attach(top_left)
@@ -53,6 +63,8 @@ Scene.GetRoot():Attach(right_centered)
 local fps = Scene.Label.Create()
 fps.Anchor = Vec2(0.5, 0.25)
 fps.Pivot = Vec2(0.5, 0.5)
+fps.Color = Vec4(1, 1, 0, 1)
+fps.FontSize = 42
 Scene.GetRoot():Attach(fps)
 
 local fps_count = 0
