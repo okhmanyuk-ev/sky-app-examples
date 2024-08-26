@@ -70,6 +70,19 @@ Scene.GetRoot():Attach(fps)
 local fps_count = 0
 local time_accumulator = 0
 
+local pulse = coroutine.create(function()
+    while true do
+        for i = 0, 1, 0.01 do
+            outlined.OutlineThickness = i
+            coroutine.yield()
+        end
+        for i = 1, 0, -0.01 do
+            outlined.OutlineThickness = i
+            coroutine.yield()
+        end
+    end
+end)
+
 function Frame(delta)
 	fps_count = fps_count + 1
 	time_accumulator = time_accumulator + delta
@@ -78,4 +91,6 @@ function Frame(delta)
 		time_accumulator = 0
 		fps_count = 0
 	end
+
+	coroutine.resume(pulse)
 end
