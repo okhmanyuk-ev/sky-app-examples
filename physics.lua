@@ -27,11 +27,35 @@ ground.Size = Vec2(512 + 256, 16)
 ground.Y = 192
 world:Attach(ground)
 
-for i = 1,25 do
-	local box = CreateRectangleEntity()
-	box.Type = Scene.Physics.EntityType.Dynamic
-	box.Pivot = Vec2(0.5, 0.5)
-	box.Size = Vec2(32, 32)
-	box.Y = -256
-	world:Attach(box)
+function SpawnSomeBoxes()
+	for i = 1,25 do
+		local box = CreateRectangleEntity()
+		box.Type = Scene.Physics.EntityType.Dynamic
+		box.Pivot = Vec2(0.5, 0.5)
+		box.Size = Vec2(32, 32)
+		box.Y = -256
+		world:Attach(box)
+	end
 end
+
+SpawnSomeBoxes()
+
+local spawn_button = Scene.StandardButton.Create()
+spawn_button.Size = Vec2(256, 32)
+spawn_button.Anchor = Vec2(0.5, 0)
+spawn_button.Pivot = Vec2(0.5, 0)
+spawn_button.Y = 32
+spawn_button.Text = "SPAWN SOME BOXES"
+spawn_button.OnClick = SpawnSomeBoxes
+ground:Attach(spawn_button)
+
+local debug_button = Scene.StandardButton.Create()
+debug_button.Size = Vec2(256, 32)
+debug_button.Anchor = Vec2(0.5, 0)
+debug_button.Pivot = Vec2(0.5, 0)
+debug_button.Y = spawn_button.Y + spawn_button.Height + 8
+debug_button.Text = "TOGGLE DEBUG MODE"
+debug_button.OnClick = function()
+	Console.Execute("if phys_debug 1 'phys_debug 0' 'phys_debug 1'")
+end
+ground:Attach(debug_button)
