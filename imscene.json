@@ -1,0 +1,4 @@
+{
+    "name": "imscene",
+    "entry_point": "imscene.lua"
+}
