@@ -2,7 +2,7 @@ local centered = Scene.Label.Create()
 centered.Anchor = Vec2(0.5, 0.5)
 centered.Pivot = Vec2(0.5, 0.5)
 centered.Text = "This is centered label"
-Scene.GetRoot():Attach(centered)
+Scene.Root:Attach(centered)
 
 local outlined = Scene.Label.Create()
 outlined.Anchor = Vec2(0.5, 0.75)
@@ -12,60 +12,60 @@ outlined.OutlineColor = Vec4(1, 0, 1, 1)
 outlined.OutlineThickness = 0.5
 outlined.FontSize = 72
 outlined.Text = "This is outlined label"
-Scene.GetRoot():Attach(outlined)
+Scene.Root:Attach(outlined)
 
 local top_left = Scene.Label.Create()
 top_left.Text = "This is top left label"
-Scene.GetRoot():Attach(top_left)
+Scene.Root:Attach(top_left)
 
 local top_centered = Scene.Label.Create()
 top_centered.Anchor = Vec2(0.5, 0)
 top_centered.Pivot = Vec2(0.5, 0)
 top_centered.Text = "This is top centered label"
-Scene.GetRoot():Attach(top_centered)
+Scene.Root:Attach(top_centered)
 
 local top_right = Scene.Label.Create()
 top_right.Anchor = Vec2(1, 0)
 top_right.Pivot = Vec2(1, 0)
 top_right.Text = "This is top right label"
-Scene.GetRoot():Attach(top_right)
+Scene.Root:Attach(top_right)
 
 local bottom_left = Scene.Label.Create()
 bottom_left.Anchor = Vec2(0, 1)
 bottom_left.Pivot = Vec2(0, 1)
 bottom_left.Text = "This is bottom left label"
-Scene.GetRoot():Attach(bottom_left)
+Scene.Root:Attach(bottom_left)
 
 local bottom_centered = Scene.Label.Create()
 bottom_centered.Anchor = Vec2(0.5, 1)
 bottom_centered.Pivot = Vec2(0.5, 1)
 bottom_centered.Text = "This is bottom centered label"
-Scene.GetRoot():Attach(bottom_centered)
+Scene.Root:Attach(bottom_centered)
 
 local bottom_right = Scene.Label.Create()
 bottom_right.Anchor = Vec2(1, 1)
 bottom_right.Pivot = Vec2(1, 1)
 bottom_right.Text = "This is bottom right label"
-Scene.GetRoot():Attach(bottom_right)
+Scene.Root:Attach(bottom_right)
 
 local left_centered = Scene.Label.Create()
 left_centered.Anchor = Vec2(0, 0.5)
 left_centered.Pivot = Vec2(0, 0.5)
 left_centered.Text = "This is left centered label"
-Scene.GetRoot():Attach(left_centered)
+Scene.Root:Attach(left_centered)
 
 local right_centered = Scene.Label.Create()
 right_centered.Anchor = Vec2(1, 0.5)
 right_centered.Pivot = Vec2(1, 0.5)
 right_centered.Text = "This is right centered label"
-Scene.GetRoot():Attach(right_centered)
+Scene.Root:Attach(right_centered)
 
 local fps = Scene.Label.Create()
 fps.Anchor = Vec2(0.5, 0.25)
 fps.Pivot = Vec2(0.5, 0.5)
 fps.Color = Vec4(1, 1, 0, 1)
 fps.FontSize = 42
-Scene.GetRoot():Attach(fps)
+Scene.Root:Attach(fps)
 
 local fps_count = 0
 local time_accumulator = 0
