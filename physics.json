@@ -1,4 +1,5 @@
 {
     "name": "physics",
+    "avatar": "physics.png",
     "entry_point": "physics.lua"
 }
